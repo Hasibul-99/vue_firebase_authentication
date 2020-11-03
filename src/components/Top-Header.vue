@@ -4,7 +4,7 @@
         <span v-if="loggedIn">Yes</span>
         <span v-else>No</span>
 
-        <div>
+        <div v-if="loggedIn">
             <button @click="signout">Sign out</button>
         </div>
     </div>
